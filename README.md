@@ -1,6 +1,14 @@
 
 Tutorial Consultas básicas ElasticSearch
 
+Principales metodos de Elasticsearch
+
+.- Index API
+.- Get API
+.- Delete API
+.- Update API
+
+
 1 - Consultar configuración y versión de elasticsearch instalda
 ```ruby
 => curl http://localhost:9200
