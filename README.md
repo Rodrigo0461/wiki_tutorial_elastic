@@ -60,6 +60,14 @@ curl -XPUT   -H 'Content-Type: application/json'  'http://localhost:9200/test/' 
 }'
 ```
 
+4. - Consultar indices creados y disponibles
+```ruby
+curl 'http://localhost:9200/_cat/indices?v'
+# output
+#health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+#red    open   test  n0n7yaH_Qa6EhhS2cnxIXA   3   2          0            0       522b           522b
+```
+
 
 
 
