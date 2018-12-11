@@ -4,10 +4,10 @@ Tutorial Consultas básicas ElasticSearch
 Instalar elasticsearch
 
 ```ruby
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.x.0.deb
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.x.0.deb.sha512
-shasum -a 512 -c elasticsearch-6.x.0.deb.sha512 
-sudo dpkg -i elasticsearch-6.x.0.deb
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.4.0.deb
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.4.0.deb.sha512
+shasum -a 512 -c elasticsearch-6.4.0.deb.sha512 
+sudo dpkg -i elasticsearch-6.4.0.deb
 ```
 
 Principales metodos de Elasticsearch
@@ -22,22 +22,20 @@ Principales metodos de Elasticsearch
 1 - Consultar configuración y versión de elasticsearch instalda
 ```ruby
 => curl http://localhost:9200
-
 {
-  "name" : "destinity_master",
-  "cluster_name" : "my_cluster",
-  "cluster_uuid" : "vtfH83UqS8KSY4voQ1xRew",
+  "name" : "I5pYMV1",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "NFdgjyA0REClV8Y8qI4ydA",
   "version" : {
-    "number" : "7.0.0",
+    "number" : "6.4.0",
     "build_flavor" : "default",
     "build_type" : "deb",
-    "build_hash" : "76cefb0",
-    "build_date" : "2018-11-13T12:10:18.050782Z",
+    "build_hash" : "595516e",
+    "build_date" : "2018-08-17T23:18:47.308994Z",
     "build_snapshot" : false,
-    "qualified" : "7.0.0-alpha1",
-    "lucene_version" : "8.0.0",
-    "minimum_wire_compatibility_version" : "6.6.0",
-    "minimum_index_compatibility_version" : "6.0.0-beta1"
+    "lucene_version" : "7.4.0",
+    "minimum_wire_compatibility_version" : "5.6.0",
+    "minimum_index_compatibility_version" : "5.0.0"
   },
   "tagline" : "You Know, for Search"
 }
