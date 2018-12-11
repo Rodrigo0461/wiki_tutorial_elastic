@@ -83,6 +83,15 @@ curl 'http://localhost:9200/_cat/indices?v'
 #health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 #red    open   test  n0n7yaH_Qa6EhhS2cnxIXA   3   2          0            0       522b           522b
 ```
+5. - Busqueda por indice LOGGER / ELASTICSEARCH
+ 
+ Busqueda por indice log
+```ruby
+ curl -XGET "http://localhost:9200/log/_search?pretty"
+```
+ 
+ 
+
 
 
 
