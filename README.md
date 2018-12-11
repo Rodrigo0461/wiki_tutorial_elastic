@@ -1,6 +1,15 @@
 
 Tutorial Consultas básicas ElasticSearch
 
+Instalar elasticsearch
+
+```ruby
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.x.0.deb
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.x.0.deb.sha512
+shasum -a 512 -c elasticsearch-6.x.0.deb.sha512 
+sudo dpkg -i elasticsearch-6.x.0.deb
+```
+
 Principales metodos de Elasticsearch
 ```ruby
  Post API
